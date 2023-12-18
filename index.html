@@ -7,13 +7,59 @@
     <!-- ====== tailwind css and daisy ui ====== -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.20/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ====== fontawsome cdn ====== -->
+    <script src="https://kit.fontawesome.com/52d4052aca.js" crossorigin="anonymous"></script>
     <!-- ====== custom css ======= -->
     <link rel="stylesheet" href="assets/style.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                "primary-text-color": '#1C1C1C',
+                "secondary-text-color": '#777',
+              }
+            }
+          }
+        }
+    </script>
 </head>
 <body>
     <!-- ======= header section start ====== -->
-    <header>
-
+    <header class="p-4 md:p-14">
+      <!-- ======= banner start ====== -->
+      <div class="container mx-auto">
+        <div class="flex flex-col lg:flex-row gap-4 items-center">
+          <!-- ====== banner content inner ====== -->
+          <div class="flex-1 space-y-8">
+            <!-- ====== banner title ====== -->
+            <h1 class="text-3xl md:text-7xl text-primary-text-color font-bold md:font-extrabold">It's good <br>tea time at The <br>Tea House</h1>
+            <!-- ====== banner description ====== -->
+            <p class="text-secondary-text-color text-base md:text-lg font-normal md:font-medium">Tea and Botanical Solutions Supplier Give Optimum<br>Satisfaction To Your Taste Buds.</p>
+            <!-- ====== banner button ====== -->
+            <button class="btn bg-btn-primary bg-gradient-to-r from-[#FF8938] to-[#F00] text-xl text-white font-bold">Explore More <img src="assets/images/arrow.png" alt=""></button>
+          </div>
+          <!-- ====== banner image inner ====== -->
+          <div class="flex-1 relative">
+            <!-- ====== banner image ====== -->
+            <div>
+              <img class="w-full" src="assets/images/banner.png" alt="">
+            </div>
+            <!-- ====== banner badge ====== -->
+            <div class="flex gap-3 bg-white shadow-lg w-40 h-20 md:w-64 md:h-24 p-2 rounded-xl justify-center items-center absolute left-8 bottom-0 md:left-24 md:bottom-2">
+              <div>
+                <i class="fa-solid fa-star text-3xl md:text-5xl text-yellow-300"></i>
+              </div>
+              <div>
+                <h3 class="text-primary-text-color text-1xl md:text-3xl font-bold md:font-extrabold">5.00</h3>
+                <p class="text-xs md:text-base text-secondary-text-color font-normal md:font-semibold">Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ======= banner end ====== -->
     </header>
     <!-- ======= header section end ====== -->
     <!-- ====== main start ====== -->
@@ -23,7 +69,7 @@
     <!-- ====== main end ====== -->
     <!-- ====== footer start ====== -->
     <footer class="footer">
-        
+
     </footer>
     <!-- ====== footer end ====== -->
 </body>
