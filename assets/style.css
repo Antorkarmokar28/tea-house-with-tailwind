@@ -9,3 +9,11 @@
 .current-review{
     top:144px;
 }
+.linear-text-color{
+    background-color: #FF8938;
+    background-image: linear-gradient(180deg, #FF8938 0%, #F00 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

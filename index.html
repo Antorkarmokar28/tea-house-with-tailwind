@@ -20,6 +20,7 @@
                 "bg-end": '#F00',
                 "primary-text-color": '#1C1C1C',
                 "secondary-text-color": '#777',
+                "third-text-color": '#494949',
               }
             }
           }
@@ -258,44 +259,58 @@
     </main>
     <!-- ====== main end ====== -->
     <!-- ====== footer start ====== -->
-    <footer class="">
-     <div class="container mx-auto">
-      <div class="footer p-10 bg-base-200 text-base-content">
-        <nav>
-          <header class="footer-title">Services</header> 
-          <a class="link link-hover">Branding</a>
-          <a class="link link-hover">Design</a>
-          <a class="link link-hover">Marketing</a>
-          <a class="link link-hover">Advertisement</a>
-        </nav> 
-        <nav>
-          <header class="footer-title">Company</header> 
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
-        </nav> 
-        <nav>
-          <header class="footer-title">Legal</header> 
-          <a class="link link-hover">Terms of use</a>
-          <a class="link link-hover">Privacy policy</a>
-          <a class="link link-hover">Cookie policy</a>
-        </nav> 
-        <form>
-          <header class="footer-title">Newsletter</header> 
-          <fieldset class="form-control w-80">
-            <label class="label">
-              <span class="label-text">Enter your email address</span>
-            </label> 
-            <div class="join">
-              <input type="text" placeholder="username@site.com" class="input input-bordered join-item" /> 
-              <button class="btn btn-primary join-item">Subscribe</button>
-            </div>
-          </fieldset>
-        </form>
-       </div>
-       <p class="text-center">Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
-     </div>
+    <footer class="p-4 md:p-14 mt-20 bg-gradient-to-r from-[#fff7ed] to-[#ffedd5]">
+      <div class="container mx-auto">
+        <!-- ====== logo and get started wrapper ====== -->
+        <div class="flex flex-col md:flex-row items-center justify-between mb-24">
+          <!-- ====== logo and inner ====== -->
+          <div>
+            <img src="assets/images/cup.png" alt="Cup Logo">
+          </div>
+          <!-- ====== get started inner ====== -->
+          <div class="flex gap-10 items-center mt-4">
+            <p class="text-third-text-color text-base md:text-xl font-normal md:font-medium">Ready to get strated?</p>
+            <button class="btn bg-gradient-to-r from-bg-start to-bg-end text-xl font-semibold text-white">Get Started</button>
+          </div>
+        </div>
+        <!-- ====== footer menu wrapper ====== -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <!-- ====== footer menu-1 ====== -->
+          <ul class="mb-4 space-y-3">
+            <li><a href="" class="text-primary-text-color text-xl font-semibold">Quick Links</a></li>
+            <li><a href="" class="text-secondary-text-color text-base font-normal">Home</a></li>
+            <li><a href="" class="text-secondary-text-color text-base font-normal">About Us</a></li>
+            <li><a href="" class="text-secondary-text-color text-base font-normal">Insurance</a></li>
+            <li><a href="" class="text-secondary-text-color text-base font-normal">Privacy Policy</a></li>
+          </ul>
+          <!-- ====== footer menu-2 ====== -->
+          <ul class="mb-4 space-y-3">
+            <li><a href="" class="text-primary-text-color text-xl font-semibold">Our Service</a></li>
+            <li><a href="" class="text-secondary-text-color text-base font-normal">Life Insurance</a></li>
+            <li><a href="" class="text-secondary-text-color text-base font-normal">Car Insurance</a></li>
+            <li><a href="" class="text-secondary-text-color text-base font-normal">Health Insurance</a></li>
+            <li><a href="" class="text-secondary-text-color text-base font-normal">House Insurance</a></li>
+          </ul>
+          <!-- ====== footer menu-3 ====== -->
+          <ul class="mb-4 space-y-3">
+            <li><a href="" class="text-primary-text-color text-xl font-semibold">Help</a></li>
+            <li><a href="" class="text-secondary-text-color text-base font-normal">FAQs</a></li>
+            <li><a href="" class="text-secondary-text-color text-base font-normal">Contact Us</a></li>
+          </ul>
+          <!-- ====== news latter inner ====== -->
+          <div>
+            <h3 class="text-primary-text-color text-xl font-semibold mb-5">Subscribe to our<br>newsletter</h3>
+            <input class="border-0 outline-0 p-4 border-b-2 border-slate-300 bg-transparent" type="email" placeholder="Email address">
+            <a href="#" class="text-3xl linear-text-color"><i class="fa-solid fa-circle-chevron-right"></i></a>
+            <ul class="flex gap-6 mt-7">
+              <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-center mt-20 text-secondary-text-color">&copy; 2027 UIDesign.to - All rights reserved.</p>
+      </div>
     </footer>
     <!-- ====== footer end ====== -->
 </body>
